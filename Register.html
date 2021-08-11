@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users register</title>
+	<link rel="stylesheet" href="boss.css">
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Products.html">Products</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact Us.html">Contact Us</a></li>
+      <li><a href="Addcart.html">Add Cart <img src="images/bag-cart.png" width="30px" height="30px"> </a></li>
+		</ul>
+		
+	<img src="images/menu.png" class="menu" onclick="menutoggle()"> 	
+	</nav>
+	<div class="row">
+		<div class="column">
+
+			<h2>Register</h2>
+<form action="action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input required type="email" placeholder="Enter Email" name="email" id="email" required><br>
+    <br>
+
+    <label for="phonenumber"><b>Phone Number</b></label>
+    <input type="text" class="form-control" placeholder="Enter Your Phonenumber" pattern="[0-9+]+" tittle=" Only valid Phone numbers are allowed (+2542303202"name="phonenumber" id="phonenumber" required>
+    <div class="invalid-feedback"> Feild is required and Only valid Phone numbers are allowed (+2542303202)</div>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="Login.html" style="color: Green">Login</a>.</p>
+  </div>
+</form>
+</div>
+		
+</div>
+
+</body>
+</html>
