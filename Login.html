@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="boss.css">
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Products.html">Products</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact Us.html">Contact Us</a></li>
+			<li><a href="Addcart.html">Add Cart <img src="images/bag-cart.png" width="30px" height="30px"> </a></li>
+		</ul>
+	
+	<img src="images/menu.png" class="menu" onclick="menutoggle()"> 	
+	</nav>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div class="row">
+		<div class="column">
+
+			<h2>Login</h2>
+
+<form action="/index.html" method="post">
+  
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <p>I don't have an account? <a href="Register.html" style="color: green">Register</a>.</p>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>

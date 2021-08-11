@@ -1,0 +1,48 @@
+
+	.row {
+  display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.column{
+	flex-basis:50%;
+	min-width: 300px;
+}
+.column img{
+	max-width: 100%;
+	padding: 0 0;
+
+}
+img{
+	size: 80px;
+	width: 80px;
+}
+h1{
+	color: blue;
+}
+h2{
+	color: green;
+}
+h3{
+	color: blue,grey;
+}
+h6{
+	color: purple;
+	font-size: 15px;
+}
+h5{
+	color: red;
+}
+p{
+	color: black;
+}
+img:hover{
+transform: translate(-5px);
+}
+@media screen and (max-width: 800px) {
+  .column{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
